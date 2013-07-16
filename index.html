@@ -13,35 +13,89 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
     <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
+      
+      /* Large desktop */
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
       }
-      .container {
-        width: 960px;
+      
+      /* Landscape phones and down */
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
       }
-      p.lead {
-        padding-top: 15px;
+      
+      /* All form factors */
+      
+      /* Main body and headings */
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
       }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
+      p {
+        font-size: 18px;
+        line-height: 24px;
       }
-      div.row {
-        border: 1px solid;
+      
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
+      
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
       }
     </style>
   </head>
